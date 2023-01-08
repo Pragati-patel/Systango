@@ -12,7 +12,7 @@
         document.addEventListener('scroll', function () {
             // Get the scroll position
             let scrollPos = window.pageYOffset;
-            if (scrollPos > 100) {
+            if (scrollPos > 10) {
                 console.log("yes")
                 // header.style.backgroundColor = "white";
                 document.getElementById("site-header-inner").style.backgroundColor = "white";
@@ -26,11 +26,9 @@
                 document.getElementById("site-header-inner").style.color = "white";
                 document.getElementById("site-header-inner").style.padding = "20px";
                 document.getElementById("site-header-inner").style.backgroundColor = "#fa8b26";
-
             }
         });
     </script>
-
 </head>
 
 <body>
@@ -54,12 +52,11 @@
 
 
     <div class="sidebar_wrap">
-        <a href="#first-section" class="link">
+        <a href="#first-section " class="link" >
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Software Developmet <br>Studio</p>
             </div>
-        </a>
         <a href="#second-section " class="link">
             <div class="sidebar_item">
                 <span class="line"></span>
@@ -107,6 +104,7 @@
 
 
     <!-- first section  -->
+    
     <div class="first_section_wrap common_section_style" id="first-section">
         <div class="first_section_img_box">
             <img src="./Images/s1.png">

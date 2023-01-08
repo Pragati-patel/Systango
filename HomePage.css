@@ -16,14 +16,17 @@ h1,h2,h3,p{
 .header_wrap {
     display: flex;
     justify-content: space-between;
+    /* color: var(--white, #fff); */
     align-items: center;
-    padding: 20px;
-    background-color: #fa8b26;
-    width: 100%;
-    border: 2px solid
+    /* padding: 10px 20px; */
+    /* border: 2px solid; */
+    position: sticky;
+    top: 0;
 }
 
-.logo,
+.logo{
+    display: flex;
+}
 .navbar {
     display: flex;
 }
@@ -42,7 +45,6 @@ h1,h2,h3,p{
     font-size: 18px;
     line-height: 1.5;
     padding: 6px 5px;
-    color: var(--white, #fff);
     /* position: relative; */
     /* transition: color 10ms linear; */
     font-family: Muli, sans-serif;
@@ -139,7 +141,7 @@ h1,h2,h3,p{
     /* align-items: center; */
     justify-content: center;
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
     padding-top: 2.5rem;
     padding-left: 2.5rem;
    scroll-behavior: smooth;
@@ -149,7 +151,6 @@ h1,h2,h3,p{
 .first_section_wrap {
     background-color: #fa8b26;
     height: 80vh;
-    border: 2px solid;
 
 }
 .first_section_info_box{
@@ -205,7 +206,6 @@ h1,h2,h3,p{
 .second_section_wrap {
     background-color: #A284F5 !important;
      align-items: center;
-    border: 2px solid;
 
 }
 .second_section_h1{
@@ -218,7 +218,6 @@ h1,h2,h3,p{
 
 /* third ssection  */
 .third_section_wrap {
-    border: 2px solid;
     background-color: #07C28E;
     align-items: center;
 }
@@ -240,21 +239,18 @@ h1,h2,h3,p{
 .fourth_section_wrap{
     align-items: center;
     background-color: #6060EB;
-    border: 2px solid;
 
 }
 /* fifth section  */
 .fifth_section_wrap{
     align-items: center;
     background-color: #fa8b26;
-    border: 2px solid;
 
 }
 /* sisth section  */
 .sixth_section_wrap{
     align-items: center;
     background-color: #07C28E;
-    border: 2px solid;
 
 }
 .third_section_btn_wrap{
@@ -283,15 +279,17 @@ h1,h2,h3,p{
 .seventh_section_wrap{
     align-items: center;
     background-color: #A284F5;
-    border: 2px solid;
 
 }
 /* eigth section  */
 .eigth_section_wrap{
     align-items: center;
     background-color: #FA8B26;
-    border: 2px solid;
 
+}
+#site-header-inner{
+    background-color: #fa8b26;
+    transition: all 0.3s;
 }
 
 

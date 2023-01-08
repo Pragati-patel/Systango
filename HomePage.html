@@ -7,15 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./HomePage.css">
+    <script>
+        // let header = document.getElementById('site-header-inner');
+        document.addEventListener('scroll', function () {
+            // Get the scroll position
+            let scrollPos = window.pageYOffset;
+            if (scrollPos > 100) {
+                console.log("yes")
+                // header.style.backgroundColor = "white";
+                document.getElementById("site-header-inner").style.backgroundColor = "white";
+                document.getElementById("site-header-inner").style.color = "black";
+                document.getElementById("site-header-inner").style.padding = "0 20px";
+                document.getElementById("white-logo").style.display = "none";
+                document.getElementById("black-logo").style.display = "flex";
+            }else{
+                document.getElementById("white-logo").style.display = "flex";
+                document.getElementById("black-logo").style.display = "none";
+                document.getElementById("site-header-inner").style.color = "white";
+                document.getElementById("site-header-inner").style.padding = "20px";
+                document.getElementById("site-header-inner").style.backgroundColor = "#fa8b26";
+
+            }
+        });
+    </script>
 
 </head>
 
 <body>
-    <div class="header_wrap">
-
-        <div class="logo"><img src="./logo.png" /></div>
+    <div class="header_wrap" id="site-header-inner">
+        <div class="logo" id="white-logo"><img src="./logo.png"  /></div>
+        <div class="logo" id="black-logo"><img src="../Images/black-logo.png" /></div>
         <div class="navbar">
-
             <div class="menu">
                 <ul class="menu_items">
                     <li>About Us</li>
@@ -166,10 +188,11 @@
             <div>
                 <h1 class="first_section_h1">Digital Transformation.</h1>
                 <p class="third_section_para">We leverage upcoming technologies to ensure you stay future-proof in this
-                    technological revolution. For us, it’s not just about the next big thing, it’s about everything that’s
+                    technological revolution. For us, it’s not just about the next big thing, it’s about everything
+                    that’s
                     next.</p>
-                    <p class="third_section_para">The next Innovation. The next Experience. The next Possibility.</p>
-                </div>
+                <p class="third_section_para">The next Innovation. The next Experience. The next Possibility.</p>
+            </div>
             <button class="first_section_btn">learn MORE</button>
         </div>
     </div>
@@ -185,7 +208,9 @@
                 <h1 class="first_section_h1">
                     Industry Experience .</h1>
             </div>
-            <p class="third_section_para">We’ve helped many startups and entrepreneurs across almost every industry, bring their ideas to life, helping them achieve results with exceptional ROI. We’re among the go-to app development companies in London.</p>
+            <p class="third_section_para">We’ve helped many startups and entrepreneurs across almost every industry,
+                bring their ideas to life, helping them achieve results with exceptional ROI. We’re among the go-to app
+                development companies in London.</p>
             <div class="third_section_btn_wrap">
 
                 <button class="sixth_section_btn">EdTech</button>
@@ -208,7 +233,8 @@
             <div>
                 <h1 class="first_section_h1">All Things Tech .</h1>
             </div>
-            <p class="third_section_para">Our team of enthusiastic developers, creative designers, and strategic thinkers
+            <p class="third_section_para">Our team of enthusiastic developers, creative designers, and strategic
+                thinkers
                 are obsessed with bringing your ideas to life with amazing results and exceptional ROIs. We are the
                 go-to app development agency in London for start-ups, SMBs, and enterprises alike. </p>
             <button class="first_section_btn">discover what we do</button>

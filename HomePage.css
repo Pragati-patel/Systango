@@ -119,22 +119,19 @@ h1,h2,h3,p{
     top: 10px;
     margin: 0.8rem 0;
 }
-.sidebar_item:hover .line{
+.sidebar_item:hover .line, .sidebar_item:active .line{
     width: 55px;
     height: 3px;
-    transition: all .3s ease-in-out;
+    transition: all .9s ease-in-out;
+    scroll-behavior: smooth;
     background-color: #2a2a2a;
     cursor: pointer;
 }
 .sidebar_item:hover .sidebar_list_item{
+    transform: all .9s ease-in-out;
     visibility: visible;
     cursor: pointer;
 }
-
-
-
-
-
 
 .common_section_style{
     display: flex;

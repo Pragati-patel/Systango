@@ -20,7 +20,7 @@
                 document.getElementById("site-header-inner").style.padding = "0 20px";
                 document.getElementById("white-logo").style.display = "none";
                 document.getElementById("black-logo").style.display = "flex";
-            }else{
+            } else {
                 document.getElementById("white-logo").style.display = "flex";
                 document.getElementById("black-logo").style.display = "none";
                 document.getElementById("site-header-inner").style.color = "white";
@@ -33,7 +33,7 @@
 
 <body>
     <div class="header_wrap" id="site-header-inner">
-        <div class="logo" id="white-logo"><img src="./logo.png"  /></div>
+        <div class="logo" id="white-logo" style="display: none;"><img src="./logo.png" /></div>
         <div class="logo" id="black-logo"><img src="../Images/black-logo.png" /></div>
         <div class="navbar">
             <div class="menu">
@@ -52,11 +52,12 @@
 
 
     <div class="sidebar_wrap">
-        <a href="#first-section " class="link" >
-            <div class="sidebar_item">
+        <a href="#first-section " class="link">
+        <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Software Developmet <br>Studio</p>
             </div>
+        </a>
         <a href="#second-section " class="link">
             <div class="sidebar_item">
                 <span class="line"></span>
@@ -104,7 +105,7 @@
 
 
     <!-- first section  -->
-    
+
     <div class="first_section_wrap common_section_style" id="first-section">
         <div class="first_section_img_box">
             <img src="./Images/s1.png">

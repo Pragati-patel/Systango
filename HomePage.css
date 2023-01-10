@@ -93,12 +93,11 @@ h1,h2,h3,p{
 .link{
     color: inherit;
     text-decoration: none;
-    transition: all .1s ease-in-out;
     scroll-behavior: smooth;
 }
-a:focus, a:active, a:target, a:visited{
+/* a:focus, a:active, a:target, a:visited{
     border: 2px solid red;
-}
+} */
 .sidebar_item{
     display: flex;
     flex-direction: column;
@@ -135,6 +134,18 @@ a:focus, a:active, a:target, a:visited{
     visibility: visible;
     cursor: pointer;
 }
+.active{
+border: 2px solid red;
+}
+
+
+
+
+
+
+
+
+
 
 .common_section_style{
     display: flex;

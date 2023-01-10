@@ -7,28 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./HomePage.css">
-    <script>
-        // let header = document.getElementById('site-header-inner');
-        document.addEventListener('scroll', function () {
-            // Get the scroll position
-            let scrollPos = window.pageYOffset;
-            if (scrollPos > 10) {
-                console.log("yes")
-                // header.style.backgroundColor = "white";
-                document.getElementById("site-header-inner").style.backgroundColor = "white";
-                document.getElementById("site-header-inner").style.color = "black";
-                document.getElementById("site-header-inner").style.padding = "0 20px";
-                document.getElementById("white-logo").style.display = "none";
-                document.getElementById("black-logo").style.display = "flex";
-            } else {
-                document.getElementById("white-logo").style.display = "flex";
-                document.getElementById("black-logo").style.display = "none";
-                document.getElementById("site-header-inner").style.color = "white";
-                document.getElementById("site-header-inner").style.padding = "20px";
-                document.getElementById("site-header-inner").style.backgroundColor = "#fa8b26";
-            }
-        });
-    </script>
+    <script type="text/javascript" src="./Home.js"></script>
+   
 </head>
 
 <body>
@@ -51,50 +31,50 @@
 
 
 
-    <div class="sidebar_wrap">
-        <a href="#first-section " class="link">
-        <div class="sidebar_item">
+    <div class="sidebar_wrap" >
+        <a href="#1 " class="link"  id="demo" onclick="activate()">
+        <div class="sidebar_item ">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Software Developmet <br>Studio</p>
             </div>
         </a>
-        <a href="#second-section " class="link">
+        <a href="#2" class="link" id="demo" onclick="activate()">
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">We Have Worked <br> With The Best </p>
             </div>
         </a>
-        <a href="#third-section " class="link">
+        <a href="#3" class="link" onclick="activate()" id="demo">
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Success <br> story</p>
             </div>
         </a>
-        <a href="#fourth-section " class="link">
+        <a href="#4" class="link" id="demo" onclick="activate()">
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Client <br> Testimonials</p>
             </div>
         </a>
-        <a href="#fifth-section " class="link">
+        <a href="#5" class="link" id="demo" onclick="activate()">
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Next-Gen <br> Technologies</p>
             </div>
         </a>
-        <a href="#sixth-section " class="link">
+        <a href="#6 " class="link">
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Industry <br> Experience</p>
             </div>
         </a>
-        <a href="#seventh-section " class="link">
+        <a href="#7" class="link">
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">All Things <br> Tech</p>
             </div>
         </a>
-        <a href="#eigth-section " class="link">
+        <a href="#8 " class="link">
             <div class="sidebar_item">
                 <span class="line"></span>
                 <p class="sidebar_list_item">Get In Touch</p>
@@ -106,7 +86,7 @@
 
     <!-- first section  -->
 
-    <div class="first_section_wrap common_section_style" id="first-section">
+    <div class="first_section_wrap common_section_style" id="1">
         <div class="first_section_img_box">
             <img src="./Images/s1.png">
         </div>
@@ -123,7 +103,7 @@
     </div>
 
     <!-- second section  -->
-    <div class="second_section_wrap common_section_style" id="second-section">
+    <div class="second_section_wrap common_section_style" id="2">
         <div class="first_section_img_box">
             <img src="./Images/y1.png">
         </div>
@@ -139,7 +119,7 @@
     </div>
 
     <!-- third section  -->
-    <div class="third_section_wrap common_section_style" id="third-section">
+    <div class="third_section_wrap common_section_style" id="3">
         <div class="first_section_img_box">
             <img src="./Images/s2.png">
         </div>
@@ -159,7 +139,7 @@
     </div>
 
     <!-- fourt section  -->
-    <div class="fourth_section_wrap common_section_style" id="fourth-section">
+    <div class="fourth_section_wrap common_section_style" id="4">
         <div class="first_section_img_box">
             <img src="./Images/t1.png">
         </div>
@@ -178,7 +158,7 @@
     </div>
 
     <!-- fifth section  -->
-    <div class="fifth_section_wrap common_section_style" id="fifth-section">
+    <div class="fifth_section_wrap common_section_style" id="5">
         <div class="first_section_img_box">
             <img src="./Images/a1.png">
         </div>
@@ -197,7 +177,7 @@
     </div>
 
     <!-- sixth section  -->
-    <div class="sixth_section_wrap common_section_style" id="sixth-section">
+    <div class="sixth_section_wrap common_section_style" id="6">
         <div class="first_section_img_box">
             <img src="./Images/n1.png">
         </div>
@@ -223,7 +203,7 @@
     </div>
 
     <!-- seventh section  -->
-    <div class="seventh_section_wrap common_section_style" id="seventh-section">
+    <div class="seventh_section_wrap common_section_style" id="7">
         <div class="first_section_img_box">
             <img src="./Images/g1.png">
         </div>
@@ -241,7 +221,7 @@
     </div>
 
     <!-- eigth section  -->
-    <div class="eigth_section_wrap common_section_style" id="eigth-section">
+    <div class="eigth_section_wrap common_section_style" id="8">
         <div class="first_section_img_box">
             <img src="./Images/o1.png">
         </div>

@@ -302,7 +302,31 @@ border: 2px solid red;
     background-color: #fa8b26;
     transition: all 0.3s;
 }
-
+/* bootom footer  */
+.bootom_footer_wrapper{
+    display: flex;
+    background-color: #000;
+    color: white;
+}
+.first-col{
+    display: flex;
+    /* flex-direction: column; */
+}
+.first-col-commom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-col-commom h1{
+    font-size: 20px;
+}
+.second-col{
+    display: flex;
+}
+.third-col{
+    display: flex;
+}
 
 
 
